@@ -12,5 +12,3 @@ if pfs_a==b and pfs_b==a:
     print("Amicable")
 else:
     print("Not Amicable")
-        
-        
