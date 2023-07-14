@@ -1,10 +1,8 @@
-def is_automorphic(n):
-    square = n**2
-    original_digits=str(n)
-    square_digits=str(square)[-len(original_digits):]
-    return original_digits==square_digits
-n=int(input())
-if is_automorphic(n):
+num=int(input())
+n=len(str(num))
+sqr=num**2
+last=sqr%pow(10,n)
+if last==num:
     print("Automorphic Number")
 else:
     print("Not an Automorphic Number")
